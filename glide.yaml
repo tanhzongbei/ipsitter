@@ -1,0 +1,19 @@
+package: ipsitter
+import:
+- package: github.com/alecthomas/log4go
+- package: github.com/fvbock/endless
+- package: github.com/getsentry/raven-go
+- package: github.com/gin-gonic/gin
+  version: ^1.2.0
+- package: github.com/hashicorp/consul
+  version: ^1.0.1
+  subpackages:
+  - api
+  - watch
+- package: github.com/prometheus/client_golang
+  version: ^0.9.0-pre1
+  subpackages:
+  - prometheus
+  - prometheus/promhttp
+- package: gopkg.in/redis.v5
+  version: ^6.7.4
